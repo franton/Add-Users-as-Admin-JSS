@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to grab the localadmins file and apply changes to a target computer at logon.
+# Script to grab the authorised admin users and grant those rights to a target computer at logout.
 
 # Author	  : r.purves@arts.ac.uk
 # Version 1.0 : 02-02-2013 - Initial Version
