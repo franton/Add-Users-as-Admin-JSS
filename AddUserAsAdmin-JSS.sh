@@ -12,13 +12,14 @@
 
 # Version 2.0 : 29-10-2013 - Scrapped all work and started again. This time the script
 #							 interrogates an extension attribute in the JSS for the user info
+# Version 2.1 : 07-07-2014 - Modified tag removal code to cope for extra tags from Casper 9.
 
 # Set up needed variables here
 
 ethernet=$(ifconfig en0|grep ether|awk '{ print $2; }')
 apiurl=`/usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist jss_url`
-apiuser='apiuser'
-apipass=''
+apiuser="apireaduser"
+apipass="h26hEsfSf4BV1wA6hc21"
 
 # Grab user info from extension attribute for target computer and process.
 
@@ -34,7 +35,7 @@ IFS=$','
 
 # Now parse the data and get the usernames
 
-adminusers=${hostinfo##*Admin Users\<\/name\>\<value\>}
+adminusers=${hostinfo##*Admin Users\<\/name\><type>String</type><value>}
 adminusers=${adminusers%%\<\/value\>*}
 
 # Parse that variable into an array for easier processing
