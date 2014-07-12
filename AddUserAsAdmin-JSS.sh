@@ -18,8 +18,8 @@
 
 ethernet=$(ifconfig en0|grep ether|awk '{ print $2; }')
 apiurl=`/usr/bin/defaults read /Library/Preferences/com.jamfsoftware.jamf.plist jss_url`
-apiuser="apireaduser"
-apipass="h26hEsfSf4BV1wA6hc21"
+apiuser="apiuser"
+apipass=""
 
 # Grab user info from extension attribute for target computer and process.
 
