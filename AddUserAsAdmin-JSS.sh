@@ -2,7 +2,7 @@
 
 # Script to grab the authorised admin users and grant those rights to a target computer at logout.
 
-# Author	  : r.purves@arts.ac.uk
+# Author      : contact@richard-purves.com
 # Version 1.0 : 02-02-2013 - Initial Version
 # Version 1.2 : 08-02-2013 - Fixed windows horrible habit of appending \r to end of lines
 # Version 1.3 : 08-03-2013 - Ignores initial part of machine name to cope with wildcards
