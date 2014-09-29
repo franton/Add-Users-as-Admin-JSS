@@ -18,5 +18,3 @@ Takes the output from a Casper extension attribute and adds them (if present) to
 This is a prototype at present and is made available for your use at your own risk.
 
 Please test on a non production environment!
-
-r.purves@arts.ac.uk
