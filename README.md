@@ -6,7 +6,7 @@ Takes the output from a Casper extension attribute and adds them (if present) to
 1) Create a Casper Extension Attribute called "Admin Users"
 
 2) Enter the AD usernames you want to have local admin rights on that computer
-   Make sure they're separated by a space.
+   Make sure they're separated by a comma.
    
 3) Set the script to run as part of your logout policies.
 
